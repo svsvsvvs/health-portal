@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "Nintendo";
+  src: url("../nintendo_NTLGDB_001.ttf")format('truetype');
+  font-weight: 400;
+}
+
+.hero{
+    font-family: 'Nintendo';
+    background-color: #E7F7FE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    font-size: 24px;
+}
+
+.hero h2{
+    padding-bottom: 15px;
+}
+
+.hero p{
+    font-family: 'Nintendo';
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+.hero img{
+    width: 400px;
+    height: 400px;
+}
+
+.hero a{
+    border: 1px solid #0CB785;
+    color: azure;
+    background-color: #0CB785;
+    text-decoration-line: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.hero a:hover{
+    border: 1px solid #0CB785;
+    background-color: azure;
+    color: #0CB785;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+/* 1. Главный контейнер: ставит левую и правую секции в ряд */
+.container {
+  display: flex;
+  gap: 30px; /* Расстояние между левым блоком и новостями */
+  align-items: center;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  padding: 40px 40px;
+}
+
+/* Стили для левого блока "О сайте" */
+.about_us {
+  flex: 0 0 300px; /* Фиксированная ширина левого блока */
+  background-color: #eaf1f3; /* Светлый фон как на макете */
+  padding: 24px;
+  border-radius: 12px;
+  position: relative;
+  max-width: 650px;
+  max-height: 300px;
+  font-family: 'Nintendo';
+  font-size: 24px;
+}
+
+.about_us img{
+    align-items: end;
+    width: 50px;
+    height: 50px;
+}
+.about_us h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.about_us p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Зеленый щит в правом нижнем углу */
+.about_us .badge {
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+/* Стили для правой секции новостей */
+.news_section {
+  flex: 1; /* Занимает все оставшееся пространство */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Шапка новостей (Заголовок + ссылка "Все новости") */
+.news_header {
+  display: flex;
+  justify-content: space-between; /* Разносит заголовок влево, ссылку вправо */
+  align-items: flex-end;
+  margin-bottom: 20px;
+  gap: 50px;
+}
+
+.news_header h3 {
+  font-size: 20px;
+  font-family: 'Nintendo';
+}
+
+.news_header a{
+  color: #0056b3;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Nintendo';
+}
+
+.news_header a:hover{
+    text-decoration: underline;
+}
+
+/* 2. Контейнер списка: выстраивает 3 карточки в ряд */
+.last_news_list {
+  display: flex;
+  gap: 20px; /* Расстояние между карточками */
+  list-style: none;
+}
+
+/* Стили для отдельной карточки новости */
+.last_news_list li {
+  flex: 1; /* Карточки будут одинаковой ширины */
+  background: #fff;
+  border: 1px solid #eef2f5;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Контент внутри карточки идет сверху вниз */
+}
+
+/* Заглушка для картинок в новостях */
+.last_news_list li img {
+  width: 100%;
+  height: 140px;
+  background-color: #ddd; /* Временный серый фон */
+  border-radius: 6px;
+  margin-bottom: 12px;
+} */
+
+.last_news_list p {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+  font-family: 'Nintendo';
+}
+
+.last_news_list h3 {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  flex-grow: 1; /* Выталкивает ссылку "Читать далее" строго вниз */
+  font-family: 'Nintendo';
+}
+
+.last_news_list a {
+  color: #0056b3;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Nintendo';
+}
+
+.last_news_list a:hover{
+    text-decoration: underline;
+}
+
+.popular_articles{
+    font-family: 'Nintendo';
+    font-size: 16px;
+}
+
+.popular_articles img{
+    width: 208px;
+    height: 140px;
+}
+
+.article-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.news-articles {
+  display: flex;
+  gap: 20px; /* Расстояние между карточками */
+  list-style: none;
+  max-width: 760px;
+}
+
+/* Стили для отдельной карточки новости */
+.news-articles li {
+  flex: 1; /* Карточки будут одинаковой ширины */
+  background: #fff;
+  border: 1px solid #eef2f5;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Контент внутри карточки идет сверху вниз */
+}
+
+.popular_articles a{
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.popular_articles a:hover{
+    text-decoration: underline;
+}
+
+.news-articles a{
+    font-size: 12px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.consult {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    font-family: 'Nintendo';
+    margin: 40px 300px;
+    max-width: 1000px;
+}
+
+.consult-header h3 {
+    margin: 0 0 12px;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #111827;
+}
+
+.consult-header p {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #374151;
+}
+
+.doctor_consult {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.doctor_consult_field input,
+.doctor_consult_field select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: white;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Nintendo';
+}
+
+.doctor_consult_field input:focus,
+.doctor_consult_field select:focus {
+    border-color: #00b878;
+}
+
+.doctor_consult a {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    background: #00b878;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.doctor_consult a:hover {
+    background: #009e67;
+}
+
+.healthy_advice {
+    width: 650px;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
+    font-family: 'Nintendo';
+}
+
+.advice_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.advice_header h3 {
+    margin: 0;
+    font-size: 26px;
+    color: #111827;
+}
+
+.advice_header a {
+    color: #0b5cab;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.advice_header a:hover {
+    text-decoration: underline;
+}
+
+.healthy_advice ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.healthy_advice li {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    column-gap: 18px;
+    padding: 22px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.healthy_advice li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.healthy_advice li img {
+    width: 64px;
+    height: 64px;
+    padding: 14px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: #e8f8e8;
+    box-sizing: border-box;
+    grid-row: 1 / 3;
+}
+
+.healthy_advice li:nth-child(2) img {
+    background: #e6f2ff;
+}
+
+.healthy_advice li:nth-child(3) img {
+    background: #eee7ff;
+}
+
+.healthy_advice li h4 {
+    margin: 4px 0 8px;
+    font-size: 17px;
+    color: #111827;
+}
+
+.healthy_advice li p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #374151;
+}
+
+.contacts{
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    font-family: 'Nintendo';
+    margin: 40px;
+}
+
+.contacts-header{
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.contacts img{
+    width: 50px;
+    height: 50px;
+}
+
+.contacts ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section{
+    scroll-margin-top: 90px;
+}

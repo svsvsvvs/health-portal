@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Nintendo";
+  src: url("../nintendo_NTLGDB_001.ttf")format('truetype');
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+section{
+    padding: 20px 40px;
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    font-family: 'Nintendo';
+    margin: 20px 40px;
+}
+
+.advice-header{
+    font-family: 'Nintendo';
+    font-size: 18px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+
+.advice ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.advice li{
+  display: grid;
+  grid-template-columns: 250px 1fr; 
+  gap: 30px; /* Зазор между картинкой и текстовым блоком */
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 20px;
+  align-items: center;
+}
+
+.advice li img {
+  width: 120px;
+  height: auto; 
+  padding: 14px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: #e8f8e8;
+  box-sizing: border-box;
+}
+
+.advice-content h3 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: #000;
+}

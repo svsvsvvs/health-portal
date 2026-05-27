@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Nintendo";
+  src: url("../nintendo_NTLGDB_001.ttf")format('truetype');
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+section{
+    padding: 20px 40px;
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    font-family: 'Nintendo';
+    margin: 20px 40px;
+}
+
+.article-header{
+    font-family: 'Nintendo';
+    font-size: 18px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+
+.article ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Расстояние между карточками */
+}
+
+/* Карточка статьи (Включаем GRID) */
+.article li {
+  display: grid;
+  /* Левая колонка для фото (250px), правая для всего текста (занимает остаток) */
+  grid-template-columns: 250px 1fr; 
+  gap: 30px; /* Зазор между картинкой и текстовым блоком */
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 20px;
+  align-items: center; /* Выравнивание элементов по верхнему краю */
+}
+
+/* Стили для картинки (левая колонка) */
+.article li img {
+  width: 100%;
+  height: 160px; /* Задаем фиксированную высоту для аккуратности */
+  object-fit: cover; /* Защищает картинку от растягивания и сжатия */
+  border-radius: 4px;
+}
+
+/* Стили для текстового контента (правая колонка) */
+.article-content h3 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: #000;
+}
+
+.article-content .author {
+  font-size: 13px;
+  color: #999;
+  margin: 0 0 15px 0;
+}
+
+.article-content .description {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.article-content .date {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  margin: 0;
+}
